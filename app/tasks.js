@@ -30,10 +30,11 @@ function rolloverTasks() {
 					ordr: i
 					, day: today
 				})
+				.save()
 			})
-			res.end(JSON.stringify(tasks))
 		})
 }
+module.exports.rolloverTasks = rolloverTasks
 
 var clearTodaysTasks = function() {
 	Tasks

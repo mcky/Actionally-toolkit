@@ -1,1 +1,5 @@
-console.log('this file is ran based on the plist')
+// This file is ran periodically based on the plist
+
+var tasks = require('./tasks.js')
+
+tasks.rolloverTasks()
