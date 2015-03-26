@@ -32,13 +32,13 @@ var generatePlist = function() {
 		'		<string>/usr/local/bin/node</string>\n' +
 		'		<string>'+ script +'</string>\n' +
 		'	</array>\n' +
-		'	<key>StartCalendarInterval</key>\n'
-		'	<dict>\n'
-		'		<key>Hour</key>\n'
-		'		<integer>0</integer>\n'
-		'		<key>Minute</key>\n'
-		'		<integer>10</integer>\n'
-		'	</dict>\n'
+		'	<key>StartCalendarInterval</key>\n' +
+		'	<dict>\n' +
+		'		<key>Hour</key>\n' +
+		'		<integer>0</integer>\n' +
+		'		<key>Minute</key>\n' +
+		'		<integer>10</integer>\n' +
+		'	</dict>\n' +
 		// '	<key>StartInterval</key>\n' +
 		// '	<integer>20</integer>\n' +
 		'</dict>\n' +
