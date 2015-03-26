@@ -57,8 +57,8 @@ var generatePlist = function() {
 }
 
 var install = function() {
-	// generatePlist()
-	// launcher(true)
+	generatePlist()
+	launcher(true)
 }
 
 program
