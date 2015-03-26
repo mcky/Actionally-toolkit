@@ -10,7 +10,6 @@ To install:
 Clone and install globally from the folder then run
 ```
 $ npm install -g
-$ asanaActionally install
 ```
 
 

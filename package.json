@@ -9,6 +9,10 @@
     "knex": "^0.7.6",
     "sqlite3": "^3.0.5"
   },
+  "scripts": {
+    "postinstall": "asanaAlly install",
+    "preuninstall": "asanaAlly stop"
+  },
   "preferGlobal": true,
   "bin": {
     "asanaAlly": "./app/cli.js"
