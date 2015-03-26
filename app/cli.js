@@ -75,6 +75,7 @@ program
 	.description('starts the script')
 	.action(function(env, options){
 		launcher(true)
+		console.log('Started')
 	})
 
 program
@@ -82,6 +83,7 @@ program
 	.description('stops the script')
 	.action(function(env, options){
 		launcher(false)
+		console.log('Stopped')
 	})
 
 program.parse(process.argv)
