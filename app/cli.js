@@ -9,6 +9,7 @@ var userLibrary = process.env.HOME + '/Library'
 var plistName = 'co.rossmackay.actionallyrollover'
 var plistPath = userLibrary +'/LaunchAgents/' + plistName + '.plist'
 var script = path.join(__dirname, './run.js')
+var tasks = require('./tasks.js')
 
 var launcher = function(toggle) {
 	var load = toggle ? 'load' : 'unload'
@@ -67,7 +68,17 @@ program
 	.command('install')
 	.description('install and start the script')
 	.action(function(env, options){
-		generatePlist()
+		install()
+		console.log('Installed')
+	})
+
+program
+	.command('run')
+	.description('runs the script')
+	.action(function(env, options){
+		tasks.rolloverTasks()
+		console.log('Run')
+		process.exit(0)
 	})
 
 program
